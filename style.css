@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: grey;
+}
+.form-style{
+    width: 350px;
+    border-radius: 5px;
+    outline: none;
+}
+.label-style{
+    font-weight: 600;
+    color: rgb(158, 4, 4);
+    margin-right: 10px;
+    letter-spacing: 1px;
+}
+.email-style{
+    margin-right: 35px;
+    
+}
+
+.email-margin{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.pasw-margin{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.radio{
+    margin-left: 150px;
+    margin-bottom: 25px;
+}
+.agree-margin{
+    margin-left: 100px;
+    margin-bottom: 25px;
+}
+
+.button {
+    width: 90px;
+    border-radius: 15px;
+    margin-left: 150px;
+    cursor: pointer;
+}
