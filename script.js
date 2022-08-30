@@ -16,6 +16,10 @@ formElement.addEventListener("submit", function(event){
     let password2 = document.getElementById('passw2').value;
     if (password != password2){
         errors.password2 = "Passwords do not match each other";
+    } 
+    
+    if (password.length < 5 && password ==""){
+        errors.password = "Password value must be more than 5 character";
     }
 
     let agree = document.getElementById('egree').checked;
@@ -48,4 +52,23 @@ formElement.addEventListener("submit", function(event){
         }
     }
 
+    if(Object.keys(errors).length == 0) {
+        form.submit ();
+    }
+
 });
+
+
+let passwordShow = document.getElementById('showhide');
+let icon = document.getElementById('show-icon');
+
+icon.addEventListener('click', function(){
+    if (passwordShow.type == 'password'){
+        passwordShow.setAttribute('type', 'text');
+        icon.classList.add('fa-eye-slash');
+    }else {
+        icon.classList.remove('fa-eye-slash');
+        passwordShow.setAttribute('type', 'password');
+
+    }
+})

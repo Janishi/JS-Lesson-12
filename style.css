@@ -67,3 +67,13 @@ body{
 .error-text{
     color: red;
 }
+
+
+.Password-Field {
+    margin-left: 130px;
+    margin-top: 25px;
+}
+
+#showhide {
+    border-radius: 5px;
+}
