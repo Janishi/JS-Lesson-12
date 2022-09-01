@@ -72,8 +72,30 @@ body{
 .Password-Field {
     margin-left: 130px;
     margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 #showhide {
     border-radius: 5px;
+}
+
+.input-box {
+    position: relative;
+}
+#email2{
+    width: 100%;
+}
+
+#form.invalid .input-box::before{
+    content: '\2612';
+    position: absolute;
+    right: 20px;
+}
+#form.valid .input-box::before{
+    content: '\2611';
+    position: absolute;
+}
+
+#text {
+    display: block;
 }
